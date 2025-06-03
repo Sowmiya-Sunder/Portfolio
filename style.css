@@ -542,6 +542,118 @@ section.reveal {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 0 25px rgba(178, 110, 255, 0.7);
 }
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-section {
+  padding: 2rem 1rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #4CAF50;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #4CAF50;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.2rem 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.timeline-period {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+}
+.timeline-content {
+  background-color: white; /* or your page background */
+  padding: 10px;
+  border-radius: 5px;
+  color: #333 !important; /* dark text */
+}
+
+.timeline-content h3,
+.timeline-content p,
+.timeline-period {
+  color: #333 !important; /* make sure text is dark */
+}
+/* Publications Section Title */
+#publications h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #bb86fc;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 10px #bb86fc88;
+  position: relative;
+}
+
+#publications h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #bb86fc, #6f42c1);
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 8px #bb86fcaa;
+}
+.view-btn {
+  background-color: #7c3aed;  /* Violet */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: none; /* Removes glow/fluorescent effect */
+}
+
+.view-btn:hover {
+  background-color: #6b21a8;  /* Slightly darker violet */
+}
+#projects h2 {
+  font-size: 20px; /* or 24px if you want it even smaller */
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 
 
